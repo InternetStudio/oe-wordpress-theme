@@ -1,2 +1,1 @@
-styles
-scripts
+find . -type l >> .gitignore
