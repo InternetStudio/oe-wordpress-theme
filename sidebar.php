@@ -10,7 +10,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
-<div id="secondary" class="widget-area one-sixth" role="complementary">
+<div id="secondary" class="widget-area" role="complementary">
 	<?php //wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </div><!-- #secondary -->

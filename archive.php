@@ -9,12 +9,11 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div class="two-thirds">
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<div class="page-header">
 				<h1 class="page-title">
 					<?php
 						if ( is_category() ) :
@@ -75,7 +74,7 @@ get_header(); ?>
 						printf( '<div class="taxonomy-description">%s</div>', $term_description );
 					endif;
 				?>
-			</header><!-- .page-header -->
+			</div><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -98,8 +97,7 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
+		</div>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

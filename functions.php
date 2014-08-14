@@ -139,7 +139,47 @@ function createRow ($attr, $content) {
 add_shortcode('row', 'createRow');
 
 function addColumn ($attr, $content) {
-    $attr = shortcode_atts(array('width' => ''), $attr);
+    $attr = shortcode_atts(array('width' => '', 'row' => ''), $attr);
+
+    if($attr[row] == 'start') {
+    	switch ($attr[width]) {
+	    	case '1/2':
+	    		return '<div class="row"><div class="one-half">' . $content . '</div>';
+	    		break;
+	      	case '1/3':
+	    		return '<div class="row"><div class="one-third">' . $content . '</div>';
+	    		break;
+	        case '2/3':
+	    		return '<div class="row"><div class="two-thirds">' . $content . '</div>';
+	    		break;
+	    	case '1/6':
+	    		return '<div class="row"><div class="one-sixth">' . $content . '</div>';
+	    		break;
+	    	case '5/6':
+	    		return '<div class="row"><div class="five-sixths">' . $content . '</div>';
+	    		break;
+	    }  
+    } else if($attr[row] == 'end') {
+	    switch ($attr[width]) {
+	    	case '1/2':
+	    		return '<div class="one-half">' . $content . '</div></div>';
+	    		break;
+	      	case '1/3':
+	    		return '<div class="one-third">' . $content . '</div></div>';
+	    		break;
+	        case '2/3':
+	    		return '<div class="two-thirds">' . $content . '</div></div>';
+	    		break;
+	    	case '1/6':
+	    		return '<div class="one-sixth">' . $content . '</div></div>';
+	    		break;
+	    	case '5/6':
+	    		return '<div class="five-sixths">' . $content . '</div></div>';
+	    		break;
+	    }  
+    }
+
+    //otherwise, normal row
     switch ($attr[width]) {
     	case '1/2':
     		return '<div class="one-half">' . $content . '</div>';
@@ -158,5 +198,7 @@ function addColumn ($attr, $content) {
     		break;
     }  
 }
+
+
 
 add_shortcode('column', 'addColumn');

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Homepage
+ * Template Name: Full Width
  *
  *
  * @package oewebsite
@@ -12,7 +12,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main"> -->
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'content', 'homepage' ); ?>
+				<?php get_template_part( 'content', 'fullwidth' ); ?>
 
 			<?php endwhile; // end of the loop. ?>
 

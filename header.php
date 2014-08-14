@@ -36,4 +36,4 @@
         </aside>
 	</header><!-- #masthead -->
 
-	<section class="interior">
+	<section class="interior row">
