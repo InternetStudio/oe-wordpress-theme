@@ -433,7 +433,8 @@ header {
   font-size: 1.6em; }
 
 .entry-title {
-  margin-top: -.21em; }
+  margin-top: -.21em;
+  margin-bottom: 30px; }
 
 footer {
   text-align: center; }
@@ -445,6 +446,9 @@ footer {
     content: "";
     display: table;
     clear: both; }
+
+.entry-content .row:first-of-type {
+  margin-top: 0px; }
 
 .interior, footer {
   max-width: 68em;
@@ -565,9 +569,15 @@ hr {
   display: block; }
 
 .back-to-top {
+  right: 40px;
+  top: 100px;
   position: fixed;
-  top: 120px;
-  right: 60px; }
+  display: none;
+  background: url("../img/top.png"); }
+  .back-to-top a {
+    width: 40px;
+    height: 40px;
+    display: block; }
 
 footer {
   border-top: 1px solid #28b09a;

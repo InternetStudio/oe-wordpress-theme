@@ -7,14 +7,11 @@
 
 get_header(); ?>
 
-	<?php get_sidebar(); ?>
 	
-	<div id="primary" class="content-area five-sixths">
-		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'content', 'single' ); ?>
+			<?php get_template_part( 'content', get_post_format() ); ?>
 
 			<?php oewebsite_post_nav(); ?>
 
@@ -22,8 +19,6 @@ get_header(); ?>
 
 		<?php endwhile; // end of the loop. ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
