@@ -12,20 +12,17 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="row">
             <div class="one-third">
-                <h3>Contact</h3>
                 <a href="#">openengagement@gmail.com</a>
             </div>
             <div class="one-third">
-                <h3>Social Media</h3>
                 <ul class="social-media">
-                    <li><img src="http://placekitten.com/38/38" /></li>
-                    <li><img src="http://placekitten.com/38/38" /></li>
-                    <li><img src="http://placekitten.com/38/38" /></li>
-                    <li><img src="http://placekitten.com/38/38" /></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" /></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" /></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" /></li>
             </div>
             <div class="one-third">
-                <h3>Newsletter</h3>
-                <input type="text"></input>
+                <p>Newsletter <input type="text"></input></p>
+                
             </div>
         </div>
 	</footer><!-- #colophon -->

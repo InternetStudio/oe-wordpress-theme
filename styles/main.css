@@ -110,14 +110,6 @@ dfn {
   font-style: italic; }
 
 /**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari, and Chrome.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
-/**
  * Address styling not present in IE 8/9.
  */
 mark {
@@ -360,24 +352,47 @@ th {
   padding: 0; }
 
 body {
-  font-size: 14px; }
+  font-size: 16px;
+  font-family: 'Helvetica', sans-serif; }
 
 a {
   color: #28b09a; }
   a:visited, a:active {
     color: #28b09a; }
+  a:hover {
+    font-style: italic; }
+
+p {
+  font-size: 1em;
+  line-height: 1.313em;
+  padding-bottom: 20px; }
 
 h1 {
-  font-size: 2.6em; }
+  font-size: 1.75em;
+  line-height: 1.875em; }
 
 h2 {
-  font-size: 1.8em; }
+  font-size: 1.3125em;
+  padding-bottom: 6px; }
 
 h3 {
-  font-size: 1.4em; }
+  font-size: 1em;
+  line-height: 1.613em;
+  font-weight: 700;
+  padding-bottom: 6px; }
 
 h4 {
   font-size: 1.2em; }
+
+ul {
+  padding-bottom: 20px; }
+  ul li {
+    margin-left: 20px; }
+
+ol {
+  padding-bottom: 20px; }
+  ol li {
+    margin-left: 22px; }
 
 .logo a {
   text-decoration: none;
@@ -390,21 +405,38 @@ header {
     text-decoration: none; }
     header nav a:visited, header nav a:active {
       color: white; }
+    header nav a:hover {
+      font-style: normal; }
   header nav li.current-menu-item {
     color: white;
     border-bottom: 2px solid white;
     padding-bottom: 2px; }
+  header nav li:hover {
+    border-bottom: 2px solid white;
+    padding-bottom: 2px; }
 
-#secondary {
-  padding-left: 0px;
-  list-style-type: none; }
-  #secondary h1 {
-    font-size: 1.6em; }
-  #secondary li {
-    margin-bottom: 4px; }
+#secondary li {
+  list-style-type: none;
+  margin-left: 0px;
+  font-size: 1.625em;
+  line-height: 1.875em; }
+  #secondary li a {
+    text-decoration: none; }
+#secondary .widget-title {
+  margin-bottom: 30px; }
+  #secondary .widget-title a {
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #28b09a; }
 
 .header-aside {
   font-size: 1.6em; }
+
+.entry-title {
+  margin-top: -.21em; }
+
+footer {
+  text-align: center; }
 
 .row {
   display: block;
@@ -479,21 +511,29 @@ header {
   .three-fourths:last-child {
     margin-right: 0; }
 
+.one-twelfth {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%; }
+  .one-twelfth:last-child {
+    margin-right: 0; }
+
 header {
   background-color: #28b09a;
-  padding: 13px 0 10px 0;
   width: 100%;
-  height: 45px;
-  margin-bottom: 100px;
-  position: relative; }
+  font-size: 1.25em; }
+  header .row {
+    max-width: 980px;
+    margin: 0px auto;
+    padding: 18px 0 9px 0;
+    text-align: center; }
   header .logo {
-    position: absolute;
-    left: 20px; }
+    float: left; }
   header nav {
-    width: 100%;
-    max-width: 100%;
+    margin: 0 auto;
     text-align: center;
-    display: inline-block; }
+    height: 2em; }
     header nav ul {
       display: inline-block;
       list-style: none;
@@ -502,15 +542,8 @@ header {
       header nav ul li {
         float: left;
         margin-right: 40px; }
-        header nav ul li:last-of-type {
-          margin-right: 0px; }
   header .location-year {
-    position: absolute;
-    top: 13px;
-    right: 20px; }
-
-.home header {
-  margin-bottom: 10px; }
+    float: right; }
 
 .browsehappy {
   margin: 0.2em 0;
@@ -538,7 +571,8 @@ hr {
 
 footer {
   border-top: 1px solid #28b09a;
-  padding: 0px 15px; }
+  padding: 0px 15px;
+  max-width: 980px; }
 
 .social-media {
   padding-left: 0px;
@@ -551,23 +585,17 @@ footer {
 
 .interior {
   max-width: 980px;
-  padding: 15px; }
+  padding: 15px;
+  margin-top: 80px; }
 
-.content-section {
-  border-top: 1px solid #28b09a;
-  position: relative; }
+.entry-content {
+  margin-top: .7em;
+  padding-bottom: 20px; }
 
 .blog-post {
-  border-top: 1px solid #cacaca; }
-  .blog-post blockquote {
-    width: 60%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1.2em; }
-  .blog-post img {
-    margin: 0 auto;
-    width: 80%;
-    display: block; }
+  padding-top: 40px;
+  display: block;
+  border-top: 1px solid #28b09a; }
 
 @media only screen and (max-width: 768px) {
   .one-half, .one-third, .two-thirds, .one-sixth, .five-sixths {

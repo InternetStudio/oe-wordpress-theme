@@ -16,6 +16,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+<link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href="<?php echo get_template_directory_uri(); ?>/styles/main.css" rel="stylesheet" type="text/css" />
 
 </head>
@@ -25,15 +26,17 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'oewebsite' ); ?></a>
 
 	<header>
-		<section class="logo">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-        </section>
-        <nav class="main-nav">
-            <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-        </nav>
-        <aside class="location-year">
-            Pittsburgh 2015
-        </aside>
+        <div class="row">
+    		<section class="logo">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+            </section>
+            <aside class="location-year">
+                Pittsburgh 2015
+            </aside>
+            <nav class="main-nav">
+                <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+            </nav>
+        </div>
 	</header><!-- #masthead -->
 
 	<section class="interior row">

@@ -158,6 +158,9 @@ function addColumn ($attr, $content) {
 	    	case '5/6':
 	    		return '<div class="row"><div class="five-sixths">' . $content . '</div>';
 	    		break;
+	    	case '1/4':
+	    		return '<div class="row"><div class="one-fourth">' . $content . '</div>';
+	    		break;	    		
 	    }  
     } else if($attr[row] == 'end') {
 	    switch ($attr[width]) {
@@ -176,6 +179,10 @@ function addColumn ($attr, $content) {
 	    	case '5/6':
 	    		return '<div class="five-sixths">' . $content . '</div></div>';
 	    		break;
+	    	case '1/4':
+	    		return '<div class="one-fourth">' . $content . '</div></div>';
+	    		break;
+
 	    }  
     }
 
@@ -196,9 +203,15 @@ function addColumn ($attr, $content) {
     	case '5/6':
     		return '<div class="five-sixths">' . $content . '</div>';
     		break;
+	    case '1/4':
+    		return '<div class="one-fourth">' . $content . '</div>';
+    		break;
+
     }  
 }
 
 
 
 add_shortcode('column', 'addColumn');
+
+
