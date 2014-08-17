@@ -439,6 +439,20 @@ header {
 footer {
   text-align: center; }
 
+@media only screen and (max-width: 780px) {
+  header nav li.current-menu-item {
+    color: white;
+    border-bottom: 0px;
+    padding-bottom: 0px; }
+    header nav li.current-menu-item a {
+      text-decoration: underline; }
+  header nav li:hover {
+    border-bottom: 0px;
+    padding-bottom: 0px; }
+
+  #secondary li {
+    font-size: 1.25em;
+    line-height: 1em; } }
 .row {
   display: block;
   margin: 25px auto 15px auto; }
@@ -523,6 +537,17 @@ footer {
   .one-twelfth:last-child {
     margin-right: 0; }
 
+@media only screen and (max-width: 780px) {
+  .one-half, .one-third, .two-thirds, .one-fourth, .three-fourths, .one-sixth, .five-sixths, .one-twelfth {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .one-half:last-child, .one-third:last-child, .two-thirds:last-child, .one-fourth:last-child, .three-fourths:last-child, .one-sixth:last-child, .five-sixths:last-child, .one-twelfth:last-child {
+      margin-right: 0; }
+
+  .row {
+    margin: 0px auto; } }
 header {
   background-color: #28b09a;
   width: 100%;
@@ -546,9 +571,27 @@ header {
       header nav ul li {
         float: left;
         margin-right: 40px; }
+    header nav .menu-link {
+      display: none;
+      cursor: pointer; }
   header .location-year {
     float: right; }
 
+@media only screen and (max-width: 780px) {
+  header .logo {
+    float: none; }
+  header .location-year {
+    float: none;
+    font-size: .8em; }
+  header nav {
+    height: auto; }
+    header nav ul {
+      display: none; }
+      header nav ul li {
+        float: none;
+        margin: 0px; }
+    header nav .menu-link {
+      display: block; } }
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -584,8 +627,16 @@ footer {
   padding: 0px 15px;
   max-width: 980px; }
 
+.footer-contact {
+  float: left; }
+
+.footer-newsletter {
+  float: right; }
+
 .social-media {
-  padding-left: 0px;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
   list-style-type: none; }
   .social-media li {
     padding-right: 15px;
@@ -593,6 +644,19 @@ footer {
     .social-media li:last-of-type {
       padding-right: 0px; }
 
+@media only screen and (max-width: 780px) {
+  .footer-contact {
+    float: none;
+    padding: 20px 0;
+    display: block; }
+
+  .footer-newsletter {
+    float: none;
+    padding: 20px 0;
+    display: block; }
+
+  .social-media {
+    padding: 20px 0; } }
 .interior {
   max-width: 980px;
   padding: 15px;
@@ -607,17 +671,18 @@ footer {
   display: block;
   border-top: 1px solid #28b09a; }
 
-@media only screen and (max-width: 768px) {
-  .one-half, .one-third, .two-thirds, .one-sixth, .five-sixths {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%; }
-    .one-half:last-child, .one-third:last-child, .two-thirds:last-child, .one-sixth:last-child, .five-sixths:last-child {
-      margin-right: 0; }
+@media only screen and (max-width: 780px) {
+  .interior {
+    max-width: 80%;
+    margin-top: 40px; }
 
-  .interior {
-    max-width: 60%; } }
-@media only screen and (max-width: 768px) {
-  .interior {
-    max-width: 80%; } }
+  #secondary {
+    text-align: left; }
+    #secondary .widget_subpages {
+      border-bottom: 1px solid #28b09a; }
+      #secondary .widget_subpages ul {
+        display: inline-block; }
+        #secondary .widget_subpages ul li {
+          width: 40%;
+          float: left;
+          margin-bottom: 20px; } }

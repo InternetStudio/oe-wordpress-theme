@@ -11,19 +11,13 @@
 	</section><!-- #content -->
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="row">
-            <div class="one-third">
-                <a href="#">openengagement@gmail.com</a>
-            </div>
-            <div class="one-third">
-                <ul class="social-media">
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" /></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" /></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" /></li>
-            </div>
-            <div class="one-third">
-                <p>Newsletter <input type="text"></input></p>
-                
-            </div>
+            <a class="footer-contact" href="#">openengagement@gmail.com</a>
+            <p class="footer-newsletter">Newsletter <input type="text"></input></p>
+            <ul class="social-media">
+                <li><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" /></li>
+                <li><img src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" /></li>
+                <li><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" /></li>
+            </ul>
         </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->

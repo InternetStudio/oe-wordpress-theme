@@ -25,6 +25,13 @@ function back2Top(){
 	});
 }
 
+function toggleMenu(){
+	$('.menu-link').click(function(){
+		$('#menu-main-nav').slideToggle('fast');
+	});
+}
+
 $(document).ready(function(){
 	back2Top();
+	toggleMenu();
 });

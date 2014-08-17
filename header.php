@@ -35,6 +35,7 @@
                 Pittsburgh 2015
             </aside>
             <nav class="main-nav">
+                <span class="menu-link">menu</span>
                 <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
             </nav>
         </div>
