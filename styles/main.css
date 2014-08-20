@@ -639,7 +639,10 @@ footer {
   float: left; }
 
 .footer-newsletter {
+  text-align: left;
   float: right; }
+  .footer-newsletter .mc_merge_var {
+    margin-bottom: 0px; }
 
 .social-media {
   margin: 0 auto;
