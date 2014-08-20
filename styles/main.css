@@ -394,9 +394,14 @@ ol {
   ol li {
     margin-left: 22px; }
 
+.logo:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 4px; }
 .logo a {
   text-decoration: none;
   color: white; }
+  .logo a:hover {
+    font-style: normal; }
 
 header {
   color: white; }
@@ -423,7 +428,7 @@ header {
   #secondary li a {
     text-decoration: none; }
 #secondary .widget-title {
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
   #secondary .widget-title a {
     text-decoration: none;
     padding-bottom: 4px;
@@ -460,6 +465,8 @@ footer {
     content: "";
     display: table;
     clear: both; }
+  .row:last-of-type {
+    margin-bottom: 0px; }
 
 .entry-content .row:first-of-type {
   margin-top: 0px; }
@@ -628,6 +635,7 @@ footer {
   max-width: 980px; }
 
 .footer-contact {
+  text-align: left;
   float: left; }
 
 .footer-newsletter {
@@ -662,9 +670,14 @@ footer {
   padding: 15px;
   margin-top: 80px; }
 
+.home .interior {
+  margin-top: 10px; }
+
 .entry-content {
-  margin-top: .7em;
-  padding-bottom: 20px; }
+  margin-top: .4em;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px; }
 
 .blog-post {
   padding-top: 40px;
