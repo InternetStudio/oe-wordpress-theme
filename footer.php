@@ -15,7 +15,7 @@
                 <h3>Contact</h3>
                 <a href="#">openengagement@gmail.com</a>
             </span>
-            <p class="footer-newsletter"><?php mailchimpSF_signup_form(); ?></p>
+            <div class="footer-newsletter one-third"><?php mailchimpSF_signup_form(); ?></div>
             <ul class="social-media">
                 <li><a href="https://www.facebook.com/openengagementconference"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" /></a></li>
                 <li><a href="http://instagram.com/openengagement"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" /></a></li>
