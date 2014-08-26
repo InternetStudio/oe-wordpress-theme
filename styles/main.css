@@ -394,14 +394,16 @@ ol {
   ol li {
     margin-left: 22px; }
 
-.logo:hover {
-  border-bottom: 2px solid white;
-  padding-bottom: 4px; }
-.logo a {
-  text-decoration: none;
-  color: white; }
-  .logo a:hover {
-    font-style: normal; }
+.logo {
+  padding-bottom: 6px; }
+  .logo:hover {
+    border-bottom: 2px solid white;
+    padding-bottom: 4px; }
+  .logo a {
+    text-decoration: none;
+    color: white; }
+    .logo a:hover {
+      font-style: normal; }
 
 header {
   color: white; }
@@ -411,7 +413,8 @@ header {
     header nav a:visited, header nav a:active {
       color: white; }
     header nav a:hover {
-      font-style: normal; }
+      font-style: normal;
+      text-decoration: underline; }
   header nav li.current-menu-item {
     color: white;
     border-bottom: 2px solid white;
@@ -585,20 +588,24 @@ header {
     float: right; }
 
 @media only screen and (max-width: 780px) {
-  header .logo {
-    float: none; }
-  header .location-year {
-    float: none;
-    font-size: .8em; }
-  header nav {
-    height: auto; }
-    header nav ul {
+  header {
+    padding-right: 15px;
+    padding-left: 15px; }
+    header .location-year {
       display: none; }
-      header nav ul li {
-        float: none;
-        margin: 0px; }
-    header nav .menu-link {
-      display: block; } }
+    header nav {
+      height: auto; }
+      header nav ul {
+        float: right;
+        clear: right;
+        text-align: right; }
+        header nav ul li {
+          float: none;
+          margin: 0px; }
+      header nav .menu-link {
+        float: right;
+        display: block;
+        margin: 5px auto; } }
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
