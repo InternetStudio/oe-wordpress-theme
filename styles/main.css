@@ -593,19 +593,18 @@ header {
     padding-left: 15px; }
     header .location-year {
       display: none; }
-    header nav {
-      height: auto; }
-      header nav ul {
-        float: right;
-        clear: right;
-        text-align: right; }
-        header nav ul li {
-          float: none;
-          margin: 0px; }
-      header nav .menu-link {
-        float: right;
-        display: block;
-        margin: 5px auto; } }
+    header nav ul {
+      display: none;
+      float: right;
+      clear: right;
+      text-align: right; }
+      header nav ul li {
+        float: none;
+        margin: 0px; }
+    header nav .menu-link {
+      float: right;
+      display: block;
+      margin: 5px auto; } }
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
