@@ -28,11 +28,15 @@ function back2Top(){
 function toggleMenu(){
 	$('.menu-link').click(function(){
 		$('#menu-main-nav').slideToggle('fast');
-
 	});
+}
+
+function stupidLinkBorderImageThing(){
+	$('a').has('img').addClass('no-border-bottom');
 }
 
 $(document).ready(function(){
 	back2Top();
 	toggleMenu();
+	stupidLinkBorderImageThing();
 });

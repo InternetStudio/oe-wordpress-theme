@@ -10,18 +10,11 @@
 
 	</section><!-- #content -->
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="row">
-            <span class="footer-contact">
-                <h3>Contact</h3>
-                <a href="#">openengagement@gmail.com</a>
-            </span>
-            <div class="footer-newsletter one-third"><?php mailchimpSF_signup_form(); ?></div>
-            <ul class="social-media">
-                <li><a href="https://www.facebook.com/openengagementconference"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" /></a></li>
-                <li><a href="http://instagram.com/openengagement"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" /></a></li>
-                <li><a href="https://twitter.com/OPENENGAGEMENT"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" /></a></li>
-            </ul>
-        </div>
+
+        <?php
+            $page = get_page_by_path('footer');
+            echo apply_filters('the_content', $page->post_content);
+        ?>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
