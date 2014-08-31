@@ -364,7 +364,7 @@ a {
 
 p {
   font-size: 1em;
-  line-height: 1.313em;
+  line-height: 1.513em;
   padding-bottom: 20px; }
 
 h1 {
@@ -689,13 +689,18 @@ footer {
     display: block; }
 
   .social-media {
-    padding: 20px 0; } }
+    padding: 20px 0; }
+
+  footer {
+    text-align: left; } }
 .interior {
   max-width: 980px;
   padding: 15px;
   margin-top: 80px; }
   .interior article img {
     padding-bottom: 20px; }
+  .interior figure img {
+    padding-bottom: 10px; }
 
 .home .interior, .archive .interior {
   margin-top: 16px; }
@@ -711,29 +716,35 @@ footer {
   display: block;
   border-top: 2px solid #28b09a; }
 
-.wp-caption .wp-caption-text {
-  margin: 0px;
-  padding: 0px; }
-
 figure {
-  margin: 0px; }
+  margin-left: 0px; }
+
+.wp-caption {
+  text-align: center; }
 
 @media only screen and (max-width: 780px) {
   article {
     max-width: 80%;
-    margin: 40px auto 0 auto; }
+    margin: 40px auto 0 auto;
+    padding-top: 20px; }
 
   .interior {
     padding: 0px;
     margin-top: 0px; }
 
+  .entry-content {
+    max-width: 80%; }
+
+  .widget {
+    margin: 0px; }
+
   #secondary {
-    padding: 20px 40px 0 40px;
+    padding: 15px;
     background-color: #fff;
     text-align: left; }
     #secondary .widget_subpages ul {
       display: inline-block;
-      padding: 0 0 10px 0; }
+      padding: 0 0 0 0; }
       #secondary .widget_subpages ul li {
         width: 40%;
         float: left;
