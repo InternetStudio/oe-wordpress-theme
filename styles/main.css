@@ -443,9 +443,15 @@ header {
 .header-aside {
   font-size: 1.6em; }
 
+.post-header ul {
+  list-style-type: none; }
+  .post-header ul li {
+    font-weight: bold;
+    padding-left: 0px;
+    margin-left: 0px; }
+
 .entry-title {
-  margin-top: -.21em;
-  margin-bottom: 30px; }
+  margin-top: -.21em; }
 
 .interior a {
   text-decoration: none;
