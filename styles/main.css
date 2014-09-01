@@ -451,7 +451,8 @@ header {
     margin-left: 0px; }
 
 .entry-title {
-  margin-top: -.21em; }
+  margin-top: -.21em;
+  padding-bottom: 20px; }
 
 .interior a {
   text-decoration: none;
@@ -656,6 +657,16 @@ hr {
     height: 40px;
     display: block; }
 
+.coming-soon {
+  background-color: white; }
+
+.coming-soon div {
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 5%; }
+  .coming-soon div img {
+    max-width: 100%; }
+
 footer {
   border-top: 2px solid #28b09a;
   padding: 0px 15px;
@@ -707,7 +718,7 @@ footer {
   margin-top: 80px; }
   .interior article img {
     padding-bottom: 20px; }
-  .interior figure img {
+  .interior .wp-caption img {
     padding-bottom: 10px; }
 
 .home .interior, .archive .interior {
@@ -716,19 +727,18 @@ footer {
 .entry-content {
   margin-top: .4em;
   padding-bottom: 20px;
-  margin-bottom: 0px;
-  padding-bottom: 0px; }
+  margin-bottom: 0px; }
 
 .blog-post {
   padding-top: 40px;
   display: block;
   border-top: 2px solid #28b09a; }
 
-figure {
-  margin-left: 0px; }
-
 .wp-caption {
   text-align: center; }
+
+.home-top-mobile {
+  display: none; }
 
 @media only screen and (max-width: 780px) {
   article {
@@ -741,7 +751,8 @@ figure {
     margin-top: 0px; }
 
   .entry-content {
-    max-width: 80%; }
+    max-width: 80%;
+    margin: 0 auto; }
 
   .widget {
     margin: 0px; }
@@ -756,4 +767,10 @@ figure {
       #secondary .widget_subpages ul li {
         width: 40%;
         float: left;
-        margin-bottom: 20px; } }
+        margin-bottom: 20px; }
+
+  .home-top {
+    display: none; }
+
+  .home-top-mobile {
+    display: block; } }

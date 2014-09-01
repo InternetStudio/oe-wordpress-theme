@@ -8,7 +8,6 @@
 		<article>		
 			<ul>
 				<li><?php the_date(M-D-Y); ?></li>
-				<li><?php the_author(); ?></li>
 				<li><?php the_tags(''); ?></li>
 			</ul>
 		</article>
