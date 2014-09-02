@@ -634,7 +634,7 @@ header {
   padding: 0.2em 0; }
 
 body {
-  background: #dff3f0;
+  background: #dff8f4;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #28b09a; }
 
@@ -647,8 +647,8 @@ hr {
   display: block; }
 
 .back-to-top {
-  right: 40px;
-  top: 100px;
+  right: 20px;
+  top: 40px;
   position: fixed;
   display: none;
   background: url("../img/top.png"); }
@@ -737,7 +737,7 @@ footer {
 .wp-caption {
   text-align: center; }
 
-.home-top-mobile {
+.home-top-mobile, .blog-top-mobile {
   display: none; }
 
 @media only screen and (max-width: 780px) {
@@ -769,8 +769,8 @@ footer {
         float: left;
         margin-bottom: 20px; }
 
-  .home-top {
+  .home-top, .blog-top {
     display: none; }
 
-  .home-top-mobile {
+  .home-top-mobile, .blog-top-mobile {
     display: block; } }
