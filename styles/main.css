@@ -670,6 +670,36 @@ hr {
   .coming-soon div img {
     max-width: 100%; }
 
+#mc_signup {
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px; }
+
+.mc_merge_var {
+  float: left; }
+  .mc_merge_var .mc_header_email {
+    display: none; }
+  .mc_merge_var .mc_input {
+    padding: 7px; }
+
+.mc_signup_submit {
+  float: left; }
+
+#mc_signup_submit {
+  margin-top: 0px !important;
+  width: 100% !important;
+  margin-left: 10px;
+  padding-top: 4px;
+  border-radius: 5px;
+  border: 0px;
+  height: 2.1em;
+  background-color: #28b09a;
+  color: #dff8f4;
+  font-size: 1em; }
+  #mc_signup_submit:hover {
+    background-color: white;
+    color: #28b09a; }
+
 footer {
   border-top: 2px solid #28b09a;
   padding: 0px 15px;

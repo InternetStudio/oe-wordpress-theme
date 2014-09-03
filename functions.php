@@ -144,43 +144,43 @@ function addColumn ($attr, $content) {
     if($attr[row] == 'start') {
     	switch ($attr[width]) {
 	    	case '1/2':
-	    		return '<div class="row"><div class="one-half">' . $content . '</div>';
+	    		return '<div class="row"><div class="one-half">' . do_shortcode($content) . '</div>';
 	    		break;
 	      	case '1/3':
-	    		return '<div class="row"><div class="one-third">' . $content . '</div>';
+	    		return '<div class="row"><div class="one-third">' . do_shortcode($content) . '</div>';
 	    		break;
 	        case '2/3':
-	    		return '<div class="row"><div class="two-thirds">' . $content . '</div>';
+	    		return '<div class="row"><div class="two-thirds">' . do_shortcode($content) . '</div>';
 	    		break;
 	    	case '1/6':
-	    		return '<div class="row"><div class="one-sixth">' . $content . '</div>';
+	    		return '<div class="row"><div class="one-sixth">' . do_shortcode($content) . '</div>';
 	    		break;
 	    	case '5/6':
-	    		return '<div class="row"><div class="five-sixths">' . $content . '</div>';
+	    		return '<div class="row"><div class="five-sixths">' . do_shortcode($content) . '</div>';
 	    		break;
 	    	case '1/4':
-	    		return '<div class="row"><div class="one-fourth">' . $content . '</div>';
+	    		return '<div class="row"><div class="one-fourth">' . $do_shortcode($content) . '</div>';
 	    		break;	    		
 	    }  
     } else if($attr[row] == 'end') {
 	    switch ($attr[width]) {
 	    	case '1/2':
-	    		return '<div class="one-half">' . $content . '</div></div>';
+	    		return '<div class="one-half">' . do_shortcode($content) . '</div></div>';
 	    		break;
 	      	case '1/3':
-	    		return '<div class="one-third">' . $content . '</div></div>';
+	    		return '<div class="one-third">' . do_shortcode($content) . '</div></div>';
 	    		break;
 	        case '2/3':
-	    		return '<div class="two-thirds">' . $content . '</div></div>';
+	    		return '<div class="two-thirds">' . do_shortcode($content) . '</div></div>';
 	    		break;
 	    	case '1/6':
-	    		return '<div class="one-sixth">' . $content . '</div></div>';
+	    		return '<div class="one-sixth">' . do_shortcode($content) . '</div></div>';
 	    		break;
 	    	case '5/6':
-	    		return '<div class="five-sixths">' . $content . '</div></div>';
+	    		return '<div class="five-sixths">' . $do_shortcode($content) . '</div></div>';
 	    		break;
 	    	case '1/4':
-	    		return '<div class="one-fourth">' . $content . '</div></div>';
+	    		return '<div class="one-fourth">' . do_shortcode($content) . '</div></div>';
 	    		break;
 
 	    }  
@@ -189,22 +189,22 @@ function addColumn ($attr, $content) {
     //otherwise, normal row
     switch ($attr[width]) {
     	case '1/2':
-    		return '<div class="one-half">' . $content . '</div>';
+    		return '<div class="one-half">' . do_shortcode($content) . '</div>';
     		break;
       	case '1/3':
-    		return '<div class="one-third">' . $content . '</div>';
+    		return '<div class="one-third">' . do_shortcode($content) . '</div>';
     		break;
         case '2/3':
-    		return '<div class="two-thirds">' . $content . '</div>';
+    		return '<div class="two-thirds">' . do_shortcode($content) . '</div>';
     		break;
     	case '1/6':
-    		return '<div class="one-sixth">' . $content . '</div>';
+    		return '<div class="one-sixth">' . do_shortcode($content) . '</div>';
     		break;
     	case '5/6':
-    		return '<div class="five-sixths">' . $content . '</div>';
+    		return '<div class="five-sixths">' . do_shortcode($content) . '</div>';
     		break;
 	    case '1/4':
-    		return '<div class="one-fourth">' . $content . '</div>';
+    		return '<div class="one-fourth">' . do_shortcode($content) . '</div>';
     		break;
 
     }  
