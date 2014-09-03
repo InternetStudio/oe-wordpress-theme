@@ -569,6 +569,9 @@ footer {
   .one-twelfth:last-child {
     margin-right: 0; }
 
+.blog-post .two-thirds {
+  float: right; }
+
 @media only screen and (max-width: 780px) {
   .one-half, .one-third, .two-thirds, .one-fourth, .three-fourths, .one-sixth, .five-sixths, .one-twelfth {
     float: left;
@@ -730,7 +733,7 @@ footer {
   margin-bottom: 0px; }
 
 .blog-post {
-  padding-top: 40px;
+  padding-top: 10px;
   display: block;
   border-top: 2px solid #28b09a; }
 
@@ -754,6 +757,10 @@ footer {
     max-width: 80%;
     margin: 0 auto; }
 
+  .blog-post .entry-content {
+    max-width: 100%;
+    margin: 0 auto; }
+
   .widget {
     margin: 0px; }
 
@@ -773,4 +780,9 @@ footer {
     display: none; }
 
   .home-top-mobile, .blog-top-mobile {
-    display: block; } }
+    display: block; }
+
+  .post-navigation {
+    display: inline-block;
+    width: 100%;
+    padding: 20px; } }

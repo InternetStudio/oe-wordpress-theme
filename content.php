@@ -4,17 +4,7 @@
  */
 ?>
 <section class="blog-post row">
-	<div class="one-fourth">
-		<article>		
-			<ul>
-				<li><?php the_date(M-D-Y); ?></li>
-				<li><?php the_tags(''); ?></li>
-			</ul>
-		</article>
-	</div>
-
 	<section id="post-<?php the_ID(); ?>" class="two-thirds" <?php post_class(); ?>>
-
 		<article>
 			<span class="post-header">
 				<a href="<?php the_permalink(); ?>"><?php the_title( '<h2 class="entry-title">', '</h2>' ); ?></a>
@@ -31,4 +21,12 @@
 			</div><!-- .entry-content -->
 		</article>
 	</section><!-- #post-## -->
+	<div class="one-fourth">
+		<article>		
+			<ul>
+				<li><?php the_date(M-D-Y); ?></li>
+				<li><?php the_tags(''); ?></li>
+			</ul>
+		</article>
+	</div>
 </section>
