@@ -509,15 +509,6 @@ textarea {
 .hentry {
 	margin: 0 0 1.5em;
 }
-.byline,
-.updated {
-	display: none;
-}
-.single .byline,
-.group-blog .byline {
-	display: inline;
-}
-
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
