@@ -691,6 +691,18 @@ hr, .home .interior hr {
   .coming-soon div img {
     max-width: 100%; }
 
+.search-submit {
+  border-radius: 5px;
+  border: 0px;
+  height: 2.1em;
+  background-color: #28b09a;
+  color: #dff8f4;
+  font-size: 1em;
+  color: #dff8f4; }
+  .search-submit:hover {
+    background-color: white;
+    color: #28b09a; }
+
 #mc_signup {
   display: inline-block;
   width: 100%;
