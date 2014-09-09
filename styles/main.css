@@ -466,6 +466,8 @@ a img {
 
 footer {
   text-align: center; }
+  footer#colophon .mc_custom_border_hdr {
+    text-align: left; }
 
 @media only screen and (max-width: 780px) {
   header nav li.current-menu-item {
@@ -569,6 +571,22 @@ footer {
   .one-twelfth:last-child {
     margin-right: 0; }
 
+.five-twelfths {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%; }
+  .five-twelfths:last-child {
+    margin-right: 0; }
+
+.twelve-twelfths {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .twelve-twelfths:last-child {
+    margin-right: 0; }
+
 .blog-post .two-thirds {
   float: right; }
 
@@ -644,10 +662,13 @@ body {
 img {
   max-width: 100%; }
 
-hr {
+hr, .home .interior hr {
   border-top: 2px solid #28b09a;
   margin: 10px 0 10px 0;
   display: block; }
+
+.interior hr {
+  border-top: 1px solid #28b09a; }
 
 .back-to-top {
   right: 20px;
