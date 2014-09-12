@@ -407,6 +407,14 @@ ol {
     .logo a:hover {
       font-style: normal; }
 
+.location-year a {
+  text-decoration: none;
+  color: white; }
+  .location-year a:hover {
+    font-style: normal;
+    border-bottom: 2px solid white;
+    padding-bottom: 8px; }
+
 header {
   color: white; }
   header nav a {

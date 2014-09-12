@@ -32,7 +32,7 @@
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
             </section>
             <aside class="location-year">
-                Pittsburgh 2015
+                <a href="http://openengagement.info/attend/pittsburgh-2015/">Pittsburgh 2015</a>
             </aside>
             <nav class="main-nav">
                 <span class="menu-link"><img src="<?php echo get_template_directory_uri(); ?>/img/menu-icon.png" /></span>
