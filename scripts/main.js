@@ -77,11 +77,9 @@ function refillsVerticalAccordion(){
 
 
 function refillsExpander() {
-  var expanderTrigger = document.getElementById("js-expander-trigger");
-  var expanderContent = document.getElementById("js-expander-content");
-
-  $('#js-expander-trigger').click(function(){
-    $(this).toggleClass("expander-hidden");
+  $('.js-expander-trigger').click(function(){
+    $(this).parent().next().slideToggle("expander-hidden");
+    $(this).find(".expander-toggle-arrow").toggleClass("open")
   });
 }
 
