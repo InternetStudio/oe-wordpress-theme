@@ -57,6 +57,8 @@ function refillsVerticalAccordion(){
 
 		$('.js-vertical-tab-accordion-heading').removeClass('is-active');
 		$('.js-vertical-tab-accordion-heading[rel^="'+activeTab+'"]').addClass('is-active');
+
+		location.href = '#schedule-top';
 	});
 
 	/* if in accordion mode */

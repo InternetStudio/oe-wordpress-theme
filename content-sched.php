@@ -11,7 +11,7 @@
 <div class="three-fourths">
 	<article id="post-<?php the_ID(); ?>" class="entry-content" <?php post_class(); ?>>
 		<?php if( $post->post_parent !== 0 ) : ?>
-			<?php the_title( sprintf( '<h1 class="entry-title">', esc_url( get_permalink() ) ), '</h1>' ); ?>
+			<?php the_title( sprintf( '<h1 class="entry-title" id="schedule-top">', esc_url( get_permalink() ) ), '</h1>' ); ?>
 		<?php endif; ?>
 		<div class="vertical-tabs-container">
 		  <div class="vertical-tabs">
@@ -44,11 +44,17 @@
 				    while ( have_rows('event_item', $other_page) ) : the_row();
 						?>
 							<div class="expander">
-								<span class="event-time"><?php the_sub_field('event_time', $other_page); ?></span><br />
-								<h3><a href="javascript:void(0)" class="js-expander-trigger expander-trigger"><span class="expander-toggle-arrow"></span><?php the_sub_field('event_artist', $other_page); ?> - <?php the_sub_field('event_title', $other_page); ?></a></h3>
+								<span class="event-time">
+									<?php the_sub_field('event_time', $other_page); ?> | <?php the_sub_field('line_of_programming', $other_page); ?>
+									
+										
+									
+								</span>
+								<br />
+								<h3><a href="javascript:void(0)" class="js-expander-trigger expander-trigger"><span class="expander-toggle-arrow"></span><?php the_sub_field('event_title', $other_page); ?> - <?php the_sub_field('event_artist', $other_page); ?></a></h3>
 							  	<div id="js-expander-content" class="expander-hidden expander-content">							  		
 							    	<?php the_sub_field('event_description', $other_page); ?>
-							  		<div class="event-location">Location: <?php the_sub_field('event_location', $other_page); ?></div>
+							  		<div class="event-location"><em><?php the_sub_field('event_location', $other_page); ?></em></div>
 							  	</div>					  	
 							</div>
 				        <?php
