@@ -74,6 +74,8 @@ function refillsVerticalAccordion(){
 
 		$('.js-vertical-tab').removeClass('is-active');
 		$('.js-vertical-tab[rel^="'+accordionActiveTab+'"]').addClass('is-active');
+
+		location.href = '#schedule-top';
 	});
 }
 
