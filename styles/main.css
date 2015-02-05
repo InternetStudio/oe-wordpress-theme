@@ -279,7 +279,7 @@ input[type="submit"] {
     font-weight: bold;
     padding: 0.75em 0.809em; }
     .vertical-tabs-container .vertical-tab-accordion-heading:hover {
-      color: #477dca; }
+      color: #000; }
     .vertical-tabs-container .vertical-tab-accordion-heading:first-child {
       border-top: 2px solid #28b09a; }
     .vertical-tabs-container .vertical-tab-accordion-heading.is-active {
