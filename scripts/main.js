@@ -58,7 +58,7 @@ function refillsVerticalAccordion(){
 		$('.js-vertical-tab-accordion-heading').removeClass('is-active');
 		$('.js-vertical-tab-accordion-heading[rel^="'+activeTab+'"]').addClass('is-active');
 
-		location.href = '#schedule-top';
+		location.href = '#top';
 	});
 
 	/* if in accordion mode */
@@ -75,7 +75,7 @@ function refillsVerticalAccordion(){
 		$('.js-vertical-tab').removeClass('is-active');
 		$('.js-vertical-tab[rel^="'+accordionActiveTab+'"]').addClass('is-active');
 
-		location.href = '#schedule-top';
+		location.href = '#top';
 	});
 }
 

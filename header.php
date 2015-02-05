@@ -26,7 +26,7 @@
 <div id="page-wrapper" class="hfeed site wrapper">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'oewebsite' ); ?></a>
 
-	<header>
+	<header id="top">
         <div class="row">
     		<section class="logo">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>

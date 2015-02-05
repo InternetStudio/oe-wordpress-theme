@@ -11,7 +11,7 @@
 <div class="three-fourths">
 	<article id="post-<?php the_ID(); ?>" class="entry-content" <?php post_class(); ?>>
 		<?php if( $post->post_parent !== 0 ) : ?>
-			<?php the_title( sprintf( '<h1 class="entry-title" id="schedule-top">', esc_url( get_permalink() ) ), '</h1>' ); ?>
+			<?php the_title( sprintf( '<h1 class="entry-title">', esc_url( get_permalink() ) ), '</h1>' ); ?>
 		<?php endif; ?>
 		<div class="vertical-tabs-container">
 		  <div class="vertical-tabs">
