@@ -241,7 +241,7 @@ function bs_responsive_img_caption_filter( $val, $attr, $content = null ) {
 // Shortcode to add twitter embed
 
 function addTwitterEmbed ($attr, $content) {
-    return '<a class="twitter-timeline"  href="https://twitter.com/OPENENGAGEMENT" data-widget-id="523560236540370944" data-link-color="#28b09a" data-chrome="noheader nofooter noborders noscrollbar" data-tweet-limit="1" > Tweets by @OPENENGAGEMENT n</a>';
+    return '<a class="twitter-timeline"  href="https://twitter.com/OPENENGAGEMENT" data-widget-id="523560236540370944" data-link-color="#669966" data-chrome="noheader nofooter noborders noscrollbar" data-tweet-limit="1" > Tweets by @OPENENGAGEMENT n</a>';
 }
 
 add_shortcode('twitter', 'addTwitterEmbed');
