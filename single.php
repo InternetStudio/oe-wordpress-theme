@@ -7,7 +7,10 @@
 
 get_header(); ?>
 
-	
+		<?php if ( in_category( '37' ) ) : ?>
+			<a href="?cat=37"><img class="blog-top" src="<?php echo get_template_directory_uri(); ?>/img/blog-top.jpg" /></a>
+			<a href="?cat=37"><img class="blog-top-mobile" src="<?php echo get_template_directory_uri(); ?>/img/blog-top-mobile.jpg" /></a>
+		<?php endif; ?> 
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
