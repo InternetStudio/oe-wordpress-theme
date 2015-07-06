@@ -925,14 +925,29 @@ header {
       margin: 0 auto;
       padding: 0;
       width: 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between; }
+      -webkit-box-pack: justify;
+      -moz-box-pack: justify;
+      box-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      -o-justify-content: space-between;
+      justify-content: space-between;
+      -ms-flex-pack: justify; }
       header nav ul li:last-of-type {
-        background-color: #ff9bb7;
+        background-color: red;
         background-image: -webkit-linear-gradient(-360deg, #ff9bb7, #f07449);
         background-image: linear-gradient(90deg,#ff9bb7, #f07449);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent; }
+        -webkit-text-fill-color: transparent;
+        background: none; }
     header nav .menu-link {
       display: none;
       cursor: pointer; }
@@ -1058,7 +1073,8 @@ img {
     height: 20px;
     position: relative;
     top: 40px;
-    background: url(../img/squiggle.jpg) no-repeat bottom; }
+    background: url(../img/oe_squiggle-01.png) no-repeat bottom;
+    background-size: 950px 6px; }
 
 @media only screen and (max-width: 920px) {
   .homepage-hero {
@@ -1074,10 +1090,11 @@ img {
     display: none; } }
 @media only screen and (max-width: 47.5em) {
   .homepage-hero p {
-    font-size: 2em; } }
+    font-size: 1.8em; } }
 footer {
-  background: url(../img/squiggle.jpg) no-repeat top;
-  padding: 0px 15px;
+  background: url(../img/oe_squiggle-01.png) no-repeat top;
+  background-size: 950px 6px;
+  padding: 30px 15px;
   max-width: 980px; }
 
 .footer-contact {
