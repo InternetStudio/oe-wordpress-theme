@@ -942,12 +942,11 @@ header {
       justify-content: space-between;
       -ms-flex-pack: justify; }
       header nav ul li:last-of-type {
-        background-color: red;
+        background-color: #ff9bb7;
         background-image: -webkit-linear-gradient(-360deg, #ff9bb7, #f07449);
         background-image: linear-gradient(90deg,#ff9bb7, #f07449);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background: none; }
+        -webkit-text-fill-color: transparent; }
     header nav .menu-link {
       display: none;
       cursor: pointer; }
