@@ -996,7 +996,8 @@ img {
   top: 40px;
   position: fixed;
   display: none;
-  background: url("../img/top.png"); }
+  background: url("../img/top.png") no-repeat;
+  background-size: 40px; }
   .back-to-top a {
     width: 40px;
     height: 40px;
