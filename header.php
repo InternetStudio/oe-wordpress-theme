@@ -29,9 +29,8 @@
 
 	<header id="top">
         <div class="row">
-<!--     		<section class="logo">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-            </section> -->
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="mobile-logo" height="24" width="24" src="<?php echo get_template_directory_uri(); ?>/img/mobile-logo.jpg" /></a>
+
             <nav class="main-nav">
                 <span class="menu-link"><img src="<?php echo get_template_directory_uri(); ?>/img/menu-icon.png" /></span>
                 <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>

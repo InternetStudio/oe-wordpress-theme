@@ -910,6 +910,8 @@ header {
   background-color: #000;
   width: 100%;
   font-size: 1.25em; }
+  header .mobile-logo {
+    display: none; }
   header .row {
     max-width: 980px;
     margin: 0px auto;
@@ -959,6 +961,10 @@ header {
     padding-left: 15px; }
     header .location-year {
       display: none; }
+    header .mobile-logo {
+      display: inline-block;
+      float: left;
+      margin-top: 5px; }
     header nav ul {
       display: none;
       float: right;
