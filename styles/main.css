@@ -740,7 +740,8 @@ header {
   list-style-type: none;
   margin-left: 0px;
   font-size: 1.625em;
-  line-height: 1.875em; }
+  line-height: 1em;
+  margin-bottom: .8em; }
   #secondary li a {
     text-decoration: none;
     border-bottom: 0px; }
