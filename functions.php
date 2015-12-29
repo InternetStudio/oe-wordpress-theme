@@ -261,3 +261,23 @@ function getSessionDay ($date) {
 	$date = date('l', $date);
 	return ($date);
 }
+
+function sessionGroup_init() {
+	// create a new taxonomy
+	register_taxonomy(
+			'cr3ativconfgroup', //taxonomy
+			'cr3ativconference', //posttype
+			array(
+					'hierarchical' => true,
+					'label' => __('Display Group', 'cr3at_conf'),
+					'query_var' => true,
+
+			)
+	);
+}
+add_action( 'init', 'sessionGroup_init' );
+
+
+
+
+

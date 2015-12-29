@@ -355,21 +355,26 @@ input[type="submit"] {
     display: table;
     clear: both; }
   .schedule-2016 .accordion-tabs .tab-header-and-content {
-    list-style: none; }
+    list-style: none;
+    margin-left: 0px; }
     @media screen and (min-width: 53.75em) {
       .schedule-2016 .accordion-tabs .tab-header-and-content {
         display: inline; } }
   .schedule-2016 .accordion-tabs .tab-link {
+    padding: .4em 1.4em;
     display: block;
-    padding-right: 1em; }
+    color: #000; }
     @media screen and (min-width: 53.75em) {
       .schedule-2016 .accordion-tabs .tab-link {
         display: inline-block; } }
   .schedule-2016 .accordion-tabs .is-active {
-    color: #ff0000; }
+    padding: .4em 1.4em;
+    background-color: #000;
+    color: #ffffff; }
   .schedule-2016 .accordion-tabs .tab-content {
     display: none;
-    width: 100%; }
+    width: 100%;
+    margin-top: 2em; }
     @media screen and (min-width: 53.75em) {
       .schedule-2016 .accordion-tabs .tab-content {
         float: left; } }

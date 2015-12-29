@@ -12,7 +12,7 @@
         $wp_query = new WP_Query(
             array(
                 'post_type' => 'cr3ativconference',
-                'cr3ativconfcategory'=>$track,
+                'cr3ativconfgroup'=>$group,
                 'posts_per_page' => 99999999,
                 'order' => 'ASC',
                 'meta_key' => 'cr3ativconfmeetingdate',
@@ -39,7 +39,8 @@
             $confdisplaystarttime = get_post_meta($post->ID, 'cr3ativ_confdisplaystarttime', $single = true);
             $confdisplayendtime = get_post_meta($post->ID, 'cr3ativ_confdisplayendtime', $single = true);
             $conflocation = get_post_meta($post->ID, 'cr3ativ_conflocation', $single = true);
-            $cr3ativ_highlight = get_post_meta($post->ID, 'cr3ativ_highlight', $single = true); ?>
+            $cr3ativ_highlight = get_post_meta($post->ID, 'cr3ativ_highlight', $single = true);
+            ?>
 
 
             <?php if( $confDay == getSessionDay($cr3ativconfmeetingdate)): ?>
@@ -50,7 +51,7 @@
                     //print ('<hr />');
                 }
                 $timeslot = displayTimeSlots($confstarttime);
-                print('<br />');
+
                 ?>
 
                 <?php if ($cr3ativ_highlight != ('')){ ?>
@@ -73,7 +74,7 @@
 
                             <?php } ?>
                             <h2 class="meeting_date"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'cr3at_conf' ); ?>&nbsp;<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-
+                            <?php the_category( $separator, $parents, $post_id ); ?>
                         <?php } else { ?>
                             <?php
                             if ( has_post_thumbnail() ) {  ?>
@@ -85,7 +86,6 @@
                             <?php } ?>
 
                             <h2 class="meeting_date"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'cr3at_conf' ); ?>&nbsp;<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-
                         <?php } ?>
 
                         <?php $sessiondate = date_i18n($dateformat, $cr3ativconfmeetingdate); ?>
@@ -164,6 +164,7 @@
                         <?php if ($sessiondate != (date_i18n($dateformat, $cr3ativconfmeetingdate))){ ?>
                             <div class="five-sixths">
                                 <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'cr3at_conf' ); ?>&nbsp;<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+                                <p class="sessioncats"><?php echo custom_taxonomies_terms_links(); ?></p><br />
                             </div>
                         <?php } else { ?>
                             <?php if ( has_post_thumbnail() ) {  ?>
@@ -172,7 +173,8 @@
                                     <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'cr3at_conf' ); ?>&nbsp;<?php the_title_attribute(); ?>"><?php the_post_thumbnail(''); ?></a>
                                 </div><!-- End of session featured image -->
                             <?php } ?>
-                                <h2 class="meeting_date"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'cr3at_conf' ); ?>&nbsp;<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+                            <h2 class="meeting_date"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'cr3at_conf' ); ?>&nbsp;<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+                            <p><?php echo custom_taxonomies_terms_links(); ?></p>
                         <?php } ?>
                     </div>
                  <?php } ?>
