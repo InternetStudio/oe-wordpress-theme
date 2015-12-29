@@ -102,6 +102,8 @@ function oewebsite_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	wp_dequeue_style('creativ_conference');
 }
 add_action( 'wp_enqueue_scripts', 'oewebsite_scripts' );
 
@@ -246,3 +248,16 @@ function addTwitterEmbed ($attr, $content) {
 
 add_shortcode('twitter', 'addTwitterEmbed');
 
+$prevDate;
+
+function displayTimeSlots ($date) {
+		$date = strtotime($date);
+		$date = date('g A', $date);	
+		return ($date);
+
+}
+
+function getSessionDay ($date) {
+	$date = date('l', $date);
+	return ($date);
+}

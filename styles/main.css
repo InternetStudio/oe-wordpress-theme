@@ -322,6 +322,58 @@ input[type="submit"] {
 .expander-hidden.expander-content {
   display: none; }
 
+.schedule-2016 .expander {
+  width: 100%; }
+  .schedule-2016 .expander .expander-trigger {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-bottom: 1px solid #DDD;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 1em;
+    padding-bottom: 0.25em;
+    text-decoration: none; }
+    .schedule-2016 .expander .expander-trigger:after {
+      font-size: 0.7em;
+      content: "\25BC";
+      margin-right: 0.5em; }
+  .schedule-2016 .expander .expander-content {
+    color: #333;
+    line-height: 1.5;
+    border-bottom: 0px; }
+  .schedule-2016 .expander .expander-hidden:after {
+    font-size: 0.7em;
+    content: "\25BA"; }
+  .schedule-2016 .expander .expander-hidden + .expander-content {
+    display: none; }
+.schedule-2016 .accordion-tabs {
+  padding: 0; }
+  .schedule-2016 .accordion-tabs:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .schedule-2016 .accordion-tabs .tab-header-and-content {
+    list-style: none; }
+    @media screen and (min-width: 53.75em) {
+      .schedule-2016 .accordion-tabs .tab-header-and-content {
+        display: inline; } }
+  .schedule-2016 .accordion-tabs .tab-link {
+    display: block;
+    padding-right: 1em; }
+    @media screen and (min-width: 53.75em) {
+      .schedule-2016 .accordion-tabs .tab-link {
+        display: inline-block; } }
+  .schedule-2016 .accordion-tabs .is-active {
+    color: #ff0000; }
+  .schedule-2016 .accordion-tabs .tab-content {
+    display: none;
+    width: 100%; }
+    @media screen and (min-width: 53.75em) {
+      .schedule-2016 .accordion-tabs .tab-content {
+        float: left; } }
+
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -1089,8 +1141,8 @@ img {
     background-color: #fff;
     padding-bottom: 60px;
     background-color: #ffffff;
-    background-image: -webkit-linear-gradient(bottom, #ffffff 1%, #f28661 1%, #f28661, #ffb4c9 60%);
-    background-image: linear-gradient(to top,#ffffff 1%, #f28661 1%, #f28661, #ffb4c9 60%);
+    background-image: -webkit-linear-gradient(bottom, #ffffff 1%, #f28661 1%, #f28661, #ffb5c9 60%);
+    background-image: linear-gradient(to top,#ffffff 1%, #f28661 1%, #f28661, #ffb5c9 60%);
     min-height: 0; }
 
   .hero-logo {
@@ -1222,5 +1274,240 @@ footer {
     display: inline-block;
     width: 100%;
     padding: 20px; } }
+/*---------------------Conference Style-------------------------- */
+.cr3ativconference_clear {
+  clear: both;
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  width: 100%; }
+
+.cr3ativconference_clearbig {
+  clear: both;
+  display: block;
+  font-size: 0;
+  height: 40px;
+  line-height: 0;
+  width: 100%; }
+
+#cr3ativconference_contentwrapper {
+  width: 100%;
+  margin: 0 auto 40px; }
+
+.cr3ativconference_content_wrapper {
+  width: 100%; }
+
+.cr3ativconference_speaker_wrapper {
+  margin-right: 3%;
+  margin-bottom: 5%;
+  width: 22.75%;
+  float: left; }
+
+.cr3ativconference_blog_wrapper .speaker_list {
+  display: inline-block;
+  margin: 20px 0; }
+
+p {
+  line-height: 1.4em; }
+
+p.sessioncats {
+  font-size: 0.8em;
+  margin-top: 20px; }
+
+.cr3ativconference_speaker_wrapper:nth-of-type(4n+5) {
+  margin-right: 0; }
+
+.cr3ativconference_speaker_name, .cr3ativconference_speaker_title, .cr3ativconference_speaker_company {
+  text-align: center; }
+
+.cr3ativconference_speaker_name, .cr3ativconference_speaker_name a, .cr3ativconference_speaker_name a:hover {
+  font-size: 1.2em;
+  margin: 10px 0 15px;
+  font-weight: bold; }
+
+.cr3ativconference_speaker_title {
+  font-size: 0.8em; }
+
+.cr3ativconference_speaker_company {
+  font-size: 1.1em;
+  margin-top: 5px; }
+
+h1.conference_date {
+  font-size: 1.9em;
+  margin-bottom: 30px;
+  margin-top: 30px; }
+
+h2.speaker_title {
+  display: inline;
+  font-size: 1.6em; }
+
+h2.meeting_date a, h2.meeting_date {
+  display: inline-block;
+  font-size: 1.2em;
+  margin-bottom: 10px; }
+
+h2.session {
+  font-size: 1.4em; }
+
+h5.date {
+  margin: 40px 0 20px 0;
+  font-size: 1.4em; }
+
+h6.session {
+  font-size: 1.2em;
+  margin: 10px 0; }
+
+.cr3ativconference_speaker_info img.alignleft {
+  margin-top: 0px; }
+
+.cr3ativconference_social_icons img, .cr3ativconference_social_icons img:hover {
+  max-width: 30px;
+  border-radius: 50% !important;
+  margin-right: 5px; }
+
+.cr3ativconference_speaker_singletitle {
+  margin: 10px 0 20px; }
+
+.cr3ativconference_speaker_company_title {
+  font-size: 1.3em;
+  margin: 15px 0 0; }
+
+.cr3ativconference_speaker_info {
+  display: inline-block;
+  margin-bottom: 20px; }
+
+.cr3ativconference_social_icons {
+  margin: 10px 0; }
+
+.cr3ativconference_speaker_bio {
+  width: 100%;
+  clear: both; }
+
+.session_featured_image img {
+  max-width: 100%; }
+
+.speaker_list {
+  clear: both;
+  width: 100%;
+  margin: 0; }
+
+.session_content {
+  clear: both;
+  display: inline-block;
+  margin: 20px 0;
+  width: 100%; }
+
+.speaker_list img, .speaker_list img:hover {
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important; }
+
+.speaker_list_wrapper {
+  float: left;
+  margin-right: 20px;
+  text-align: center; }
+
+.speaker_list_wrapper a {
+  display: block;
+  font-size: 0.85em;
+  text-align: center; }
+
+.highlight {
+  background-color: #eeeeee;
+  padding: 20px;
+  margin-bottom: 40px; }
+
+.conference-more {
+  display: inline-block;
+  font-size: 0.85em;
+  margin: 20px 0 40px 0; }
+
+.highlight .conference-more {
+  margin: 20px 0 0 0; }
+
+.conference-time {
+  font-size: .8em; }
+
+.conference-location {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.2em;
+  margin: 0 0 10px 0;
+  padding: 0; }
+
+.conference-date {
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 1.2em;
+  margin: 0 0 10px 0;
+  padding: 0; }
+
+.single-conference-time {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 0 30px;
+  padding: 0; }
+
+.single-conference-location {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  padding: 0; }
+
+.speakerwidgetwrapper .speakerwidget {
+  float: left;
+  margin-bottom: 30px;
+  margin-right: 0;
+  margin-top: 0;
+  width: 100%; }
+
+.sessionwidget {
+  clear: both;
+  margin-bottom: 20px;
+  width: 100%;
+  float: left; }
+
+.sessionwidget .speaker_list .speaker_list_wrapper {
+  margin-bottom: 10px; }
+
+.sessionwidget .conference_content .speaker_list {
+  float: left; }
+
+/*  START OF MEDIA QUERIES */
+@media only screen and (max-width: 800px) {
+  .embed-container {
+    position: relative;
+    padding-bottom: 52.25%;
+    /* 16/9 ratio */
+    padding-top: 30px;
+    /* IE6 workaround*/
+    height: 0;
+    overflow: hidden; }
+
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+  img {
+    max-width: 100%;
+    height: auto; }
+
+  img {
+    -ms-interpolation-mode: bicubic; }
+
+  .cr3ativconference_speaker_wrapper {
+    margin-right: 0%;
+    margin-bottom: 5%;
+    width: 100%;
+    float: left; } }
+/*  END OF MEDIA QUERIES */
 
 /*# sourceMappingURL=main.css.map */
