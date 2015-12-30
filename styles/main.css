@@ -357,14 +357,14 @@ input[type="submit"] {
   .schedule-2016 .accordion-tabs .tab-header-and-content {
     list-style: none;
     margin-left: 0px; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 47.5em) {
       .schedule-2016 .accordion-tabs .tab-header-and-content {
         display: inline; } }
   .schedule-2016 .accordion-tabs .tab-link {
     padding: .4em 1.4em;
     display: block;
     color: #000; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 47.5em) {
       .schedule-2016 .accordion-tabs .tab-link {
         display: inline-block; } }
   .schedule-2016 .accordion-tabs .is-active {
@@ -374,8 +374,9 @@ input[type="submit"] {
   .schedule-2016 .accordion-tabs .tab-content {
     display: none;
     width: 100%;
-    margin-top: 2em; }
-    @media screen and (min-width: 53.75em) {
+    margin-top: 2em;
+    padding: 1.25em; }
+    @media screen and (min-width: 47.5em) {
       .schedule-2016 .accordion-tabs .tab-content {
         float: left; } }
 
@@ -1434,7 +1435,7 @@ h6.session {
   margin: 20px 0 0 0; }
 
 .conference-time {
-  font-size: .8em; }
+  font-size: 1em; }
 
 .conference-location {
   font-size: 1em;
@@ -1480,6 +1481,9 @@ h6.session {
 
 .sessionwidget .conference_content .speaker_list {
   float: left; }
+
+.group-title {
+  font-weight: 800; }
 
 /*  START OF MEDIA QUERIES */
 @media only screen and (max-width: 800px) {

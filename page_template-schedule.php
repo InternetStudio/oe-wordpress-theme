@@ -15,8 +15,10 @@ get_header(); ?>
         <?php
 
         $conferenceDays = array(
-            'Thursday' => array('Morning', 'Noon', 'Night'),
-            'Friday' => array('Morning', 'Noon', 'Night'),
+            'Thursday' => array('OE in Education', 'Aesthetics and Politics', 'Suzanne Lacy at CAPL'),
+            'Friday' => array('OEHQ', 'Open Houses', 'OMCA Friday Night'),
+            'Saturday' => array('All Day', 'Morning', 'Lunchtime', 'Afternoon', 'Evening', 'After Hours'),
+            'Sunday' => array('All Day', 'Morning', 'Lunchtime', 'Afternoon', 'Evening', 'After Hours'),
         )
         ?>
         <ul class="accordion-tabs">
@@ -26,7 +28,7 @@ get_header(); ?>
                     <div class="tab-content">
                         <div class="expander">
                             <?php foreach($conferenceDays[$confDay] as $group): ?>
-                                <div class="js-expander-trigger expander-trigger expander-hidden"><span><?php print $group; ?>&nbsp;</span></div>
+                                <div class="js-expander-trigger expander-trigger expander-hidden"><span class="group-title"><?php print $group; ?>&nbsp;</span></div>
                                 <div id="js-expander-content" class="expander-content">
                                     <?php include( locate_template( 'taxonomy-cr3ativconfcategory.php' ) ); ?>
                                 </div>
@@ -35,7 +37,17 @@ get_header(); ?>
 
                     </div>
                 </li>
+
             <?php endforeach; ?>
+            <li class="tab-header-and-content">
+                <a href="javascript:void(0)" class="tab-link">OEHQ</a>
+                <div class="tab-content">
+                    <div class="expander">
+                        <p> what shall go here </p>
+                    </div>
+
+                </div>
+            </li>
         </ul>
     </div>
 </div>

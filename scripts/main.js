@@ -75,13 +75,15 @@ function refillsVerticalAccordion(){
 	});
 }
 
-$(document).ready(function() {
+function refillsExpander(){
+	//refills expander
 	$('.js-expander-trigger').click(function(){
 		$(this).toggleClass('expander-hidden');
 	});
-});
+}
 
-$(document).ready(function () {
+function refillsAccordionTabs(){
+	//refills accordion tabs
 	$('.accordion-tabs').each(function() {
 		$(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();
 	});
@@ -98,7 +100,16 @@ $(document).ready(function () {
 			event.preventDefault();
 		}
 	});
+}
+
+
+
+
+$(document).ready(function() {
+	back2Top();
+	toggleMenu();
+	stupidLinkBorderImageThing();
+	refillsVerticalAccordion();
+	refillsExpander();
+	refillsAccordionTabs();
 });
-
-
-
