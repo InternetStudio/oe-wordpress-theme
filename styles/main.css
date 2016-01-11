@@ -833,6 +833,10 @@ footer {
   font-size: 1.3em;
   border-bottom: 2px solid #669966; }
 
+.blog-intro {
+  width: 80%;
+  margin: 10px auto; }
+
 @media only screen and (max-width: 47.5em) {
   header nav li.current-menu-item {
     color: #ffffff;
@@ -1238,6 +1242,9 @@ footer {
 
 .home-top-mobile, .blog-top-mobile {
   display: none; }
+
+.blog-top {
+  margin-bottom: 10px; }
 
 @media only screen and (max-width: 47.5em) {
   article {
