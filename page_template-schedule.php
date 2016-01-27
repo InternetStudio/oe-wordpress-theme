@@ -15,10 +15,10 @@ get_header(); ?>
         <?php
 
         $conferenceDays = array(
-            'Thursday' => array('OE in Education', 'Aesthetics and Politics', 'Suzanne Lacy at CAPL'),
-            'Friday' => array('OEHQ', 'Open Houses', 'OMCA Friday Night'),
-            'Saturday' => array('All Day', 'Morning', 'Lunchtime', 'Afternoon', 'Evening', 'After Hours'),
-            'Sunday' => array('All Day', 'Morning', 'Lunchtime', 'Afternoon', 'Evening', 'After Hours'),
+            'Thursday' => array('Aesthetics and Politics'),
+            'Friday' => array('Open Houses', 'OMCA Friday Night'),
+            'Saturday' => array('All Day', 'Morning', 'Lunchtime', 'Afternoon', 'Evening', 'Keynote', 'After Hours'),
+            'Sunday' => array('All Day', 'Morning', 'Lunchtime', 'Afternoon', 'Evening', 'Keynote', 'After Hours'),
         )
         ?>
         <ul class="accordion-tabs">
@@ -26,6 +26,12 @@ get_header(); ?>
                 <li class="tab-header-and-content">
                     <a href="javascript:void(0)" class="tab-link"><?php print ($confDay); ?></a>
                     <div class="tab-content">
+                        <?php
+                            if($confDay == 'Saturday' OR $confDay == 'Sunday') {
+                                print('<p>Coming soon! Follow us on social media for updates.</p>');
+                            }
+
+                        ?>
                         <div class="expander">
                             <?php foreach($conferenceDays[$confDay] as $group): ?>
                                 <div class="js-expander-trigger expander-trigger expander-hidden"><span class="group-title"><?php print $group; ?>&nbsp;</span></div>
