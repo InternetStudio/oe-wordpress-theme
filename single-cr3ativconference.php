@@ -25,7 +25,7 @@
             <?php the_post_thumbnail(''); ?>
 
             <?php } ?>
-
+            <p><a href="/oakland-2016/schedule">< back to schedule</a></p>
             <h1 class="conference_date"><?php the_title (); ?></h1>
             
                 <!-- Start of conference date -->
