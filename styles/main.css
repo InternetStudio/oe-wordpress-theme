@@ -1011,7 +1011,7 @@ header {
       -o-justify-content: space-between;
       justify-content: space-between;
       -ms-flex-pack: justify; }
-      header nav ul li:last-of-type {
+      header nav ul li:first-of-type {
         background-color: #ff9bb7;
         background-image: -webkit-linear-gradient(-360deg, #ff9bb7, #f07449);
         background-image: linear-gradient(90deg,#ff9bb7, #f07449);
