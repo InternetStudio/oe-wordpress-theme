@@ -1,5 +1,4 @@
-<?php get_header(); ?>
-<p><a href="/oakland-2016/schedule">< back to schedule</a></p>
+
 <!-- Start of content wrapper -->
 <div id="cr3ativconference_contentwrapper">
 
@@ -28,8 +27,6 @@
             )
         );
         remove_filter('posts_orderby','cr3ativoderby2');
-
-        print('<h1>' . $term . '</h1>');
 
         $sessiondate = '';
         $timeslot = '';

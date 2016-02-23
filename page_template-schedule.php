@@ -17,8 +17,8 @@ get_header(); ?>
         $conferenceDays = array(
             'Thursday' => array('Pre-conference Intensives'),
             'Friday' => array('Open Houses', 'OMCA Friday Night'),
-            'Saturday' => array('All Day', 'Morning', 'Lunchtime', 'Afternoon', 'Evening', 'Keynote', 'After Hours'),
-            'Sunday' => array('All Day', 'Morning', 'Lunchtime', 'Afternoon', 'Evening', 'Keynote', 'After Hours'),
+            'Saturday' => array('Open Platform', 'All Day', 'Morning', 'Lunchtime', 'Afternoon', 'Evening', 'Keynote', 'After Hours'),
+            'Sunday' => array('Open Platform', 'All Day', 'Morning', 'Lunchtime', 'Afternoon', 'Evening', 'Keynote', 'After Hours'),
         )
         ?>
         <p style="padding: 0 15px;"><em>OE 2016 programming details will be released throughout the month of February. Please check back, and follow us on social media for the latest updates on OE 2016!</em></p>
@@ -47,7 +47,7 @@ get_header(); ?>
                                         print('<p>Every Friday night OMCA hosts a family-friendly take on a festive night market, featuring live music, food trucks, local beer and wine, and more! On April 29th "Friday Nights @ OMCA" will feature projects by OE 2016 presenters, and serve as the kick-off event for the conference.</p>');
                                     }
                                     ?>
-                                    <?php include( locate_template( 'taxonomy-cr3ativconfcategory.php' ) ); ?>
+                                    <?php include( locate_template( 'taxonomy-cr3ativconfcategory-include.php' ) ); ?>
                                 </div>
                             <?php endforeach; ?>
                         </div>
