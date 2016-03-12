@@ -1,4 +1,4 @@
-
+<?php get_header(); ?>
 <!-- Start of content wrapper -->
 <div id="cr3ativconference_contentwrapper">
 
@@ -40,10 +40,10 @@
             $confdisplayendtime = get_post_meta($post->ID, 'cr3ativ_confdisplayendtime', $single = true);
             $conflocation = get_post_meta($post->ID, 'cr3ativ_conflocation', $single = true);
             $cr3ativ_highlight = get_post_meta($post->ID, 'cr3ativ_highlight', $single = true);
+
             ?>
 
-            <?php //if( $confDay == getSessionDay($cr3ativconfmeetingdate)): ?>
-
+            <?php if( $confDay == getSessionDay($cr3ativconfmeetingdate)): ?>
                 <?php if($timeslot != displayTimeSlots($confstarttime)) {
                     //print(displayTimeSlots($confstarttime));
                 } else {
@@ -55,7 +55,7 @@
 
                 <?php if ($cr3ativ_highlight != ('')){ ?>
 
-
+                <!--no highlight-->
 
                 <?php } else { ?>
 
@@ -94,7 +94,7 @@
                         <?php } ?>
                     </div>
                  <?php } ?>
-            <?php //endif; ?>
+            <?php endif; ?>
         <?php endwhile; ?>
 
     </div><!-- End of content wrapper -->
