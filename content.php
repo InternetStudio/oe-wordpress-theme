@@ -8,7 +8,6 @@
 		<article>
 			<span class="post-header">
 				<a href="<?php the_permalink(); ?>"><?php the_title( '<h2 class="entry-title">', '</h2>' ); ?></a>
-				<?php the_meta(); ?>
 			</span>
 			<div class="entry-content">
 				<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'oewebsite' ) ); ?>
