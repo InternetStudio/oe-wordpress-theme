@@ -21,7 +21,6 @@ get_header(); ?>
             'Sunday' => array('Open Platform', 'All Day', 'Morning', 'Lunchtime', 'Afternoon', 'Evening', 'Keynote', 'After Hours'),
         )
         ?>
-        <p style="padding: 0 15px;"><em>OE 2016 programming details will be released throughout the month of February. Please check back, and follow us on social media for the latest updates on OE 2016!</em></p>
         <ul class="accordion-tabs">
             <?php foreach(array_keys($conferenceDays) as $confDay): ?>
                 <li class="tab-header-and-content">
