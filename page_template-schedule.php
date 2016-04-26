@@ -61,7 +61,12 @@ get_header(); ?>
                     <div class="expander">
                         <p>When you arrive at OE 2016, make your first stop the Open Engagement Headquarters OEHQ! OEHQ is the one-stop shop for checking in, picking up OE 2016 merchandise, and getting the most up-to-date information about the conference throughout the weekend.</p>
 
-                        <p>Hours and exact location of OEHQ will be posted before the conference.</p>
+                        <p>
+                            Registration Hours are:<br />
+                            Friday 9:00am – 9:00pm<br />
+                            Saturday 9:00am – 5:00pm<br />
+                            Sunday 9:00am – 5:00pm
+                        </p>
                     </div>
 
                 </div>
@@ -72,9 +77,3 @@ get_header(); ?>
 
 
 <?php get_footer(); ?>
-
-
-
-
-
-
