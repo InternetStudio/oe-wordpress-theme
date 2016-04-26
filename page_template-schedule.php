@@ -59,7 +59,7 @@ get_header(); ?>
                 <a href="javascript:void(0)" class="tab-link">OEHQ</a>
                 <div class="tab-content">
                     <div class="expander">
-                        <p>When you arrive at OE 2016, make your first stop the Open Engagement Headquarters OEHQ! OEHQ is the one-stop shop for checking in, picking up OE 2016 merchandise, and getting the most up-to-date information about the conference throughout the weekend.</p>
+                        <p>When you arrive at OE 2016, make your first stop the Open Engagement Headquarters OEHQ! OEHQ is the one-stop shop for checking in, picking up OE 2016 merchandise, and getting the most up-to-date information about the conference throughout the weekend. OEHQ is located at the main entrance to OMCA, in the Oak Street Plaza on level 3</p>
 
                         <p>
                             Registration Hours are:<br />
