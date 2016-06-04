@@ -5,9 +5,8 @@
  * @package oewebsite
  */
 ?>
-<div class="one-fourth">
-	<?php get_sidebar(); ?>
-</div>
+
+<?php get_sidebar('sidebar-blog'); ?>
 <div class="three-fourths">
 	<article id="post-<?php the_ID(); ?>" class="entry-content" <?php post_class(); ?>>
 		<?php if( $post->post_parent !== 0 ) : ?>

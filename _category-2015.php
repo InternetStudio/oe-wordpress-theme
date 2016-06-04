@@ -8,6 +8,8 @@
  */
 
 get_header(); ?>
+<?php get_sidebar('blog'); ?>
+<div class="three-fourths">
 	<img class="blog-top" src="<?php echo get_template_directory_uri(); ?>/img/blog-top.jpg" />
 	<img class="blog-top-mobile" src="<?php echo get_template_directory_uri(); ?>/img/blog-top-mobile.jpg" />
 	<?php if ( have_posts() ) : ?>
@@ -30,6 +32,6 @@ get_header(); ?>
 		<?php get_template_part( 'content', 'none' ); ?>
 
 	<?php endif; ?>
-
+</div>
 
 <?php get_footer(); ?>

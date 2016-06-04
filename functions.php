@@ -86,6 +86,17 @@ function oewebsite_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+
+	register_sidebar( array(
+			'name'          => __( 'Sidebar Blog', 'oewebsite' ),
+			'id'            => 'sidebar-blog',
+			'description'   => '',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h1 class="widget-title">',
+			'after_title'   => '</h1>',
+	) );
+
 }
 add_action( 'widgets_init', 'oewebsite_widgets_init' );
 
@@ -243,7 +254,7 @@ function bs_responsive_img_caption_filter( $val, $attr, $content = null ) {
 // Shortcode to add twitter embed
 
 function addTwitterEmbed ($attr, $content) {
-    return '<a class="twitter-timeline"  href="https://twitter.com/OPENENGAGEMENT" data-widget-id="523560236540370944" data-link-color="#f07449" data-chrome="noheader nofooter noborders noscrollbar" data-tweet-limit="1" > Tweets by @OPENENGAGEMENT n</a>';
+    return '<a class="twitter-timeline"  href="https://twitter.com/OPENENGAGEMENT" data-widget-id="523560236540370944" data-link-color="#ff3c00" data-chrome="noheader nofooter noborders noscrollbar" data-tweet-limit="1" > Tweets by @OPENENGAGEMENT n</a>';
 }
 
 add_shortcode('twitter', 'addTwitterEmbed');
