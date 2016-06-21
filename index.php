@@ -16,7 +16,11 @@ get_header(); ?>
 <!-- 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main"> -->
 		<?php get_sidebar('blog'); ?>
+
 		<div class="three-fourths">
+			<p>
+				<img class="blog-top" src="<?php echo get_template_directory_uri(); ?>/img/blog-header-fullwidth.jpg" />
+			</p>
 			<?php if ( have_posts() ) : ?>
 
 				<?php /* Start the Loop */ ?>

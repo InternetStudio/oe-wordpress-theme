@@ -1018,11 +1018,9 @@ header {
       justify-content: space-between;
       -ms-flex-pack: justify; }
       header nav ul li:first-of-type {
-        background-color: #ff9bb7;
-        background-image: -webkit-linear-gradient(-360deg, #ff9bb7, #f07449);
-        background-image: linear-gradient(90deg,#ff9bb7, #f07449);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent; }
+        color: #ff0000; }
+        header nav ul li:first-of-type a:visited {
+          color: #ff0000; }
     header nav .menu-link {
       display: none;
       cursor: pointer; }

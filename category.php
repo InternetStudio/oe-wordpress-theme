@@ -16,7 +16,7 @@ get_header(); ?>
         <?php if ( in_category( '8' ) ) : ?>
             <a href="?cat=8"><img class="blog-top" src="<?php echo get_template_directory_uri(); ?>/img/oe-blog-header-2015.jpg" /></a>
         <?php endif; ?>
-        <?php if ( in_category( '82' ) ) : ?>
+        <?php if ( in_category( '61' ) ) : ?>
             <a href="?cat=82"><img class="blog-top" src="<?php echo get_template_directory_uri(); ?>/img/oe-blog-header-2016.jpg" /></a>
         <?php endif; ?>
         <?php if ( in_category( '85' ) ) : ?>
