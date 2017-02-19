@@ -6,20 +6,6 @@
     <div class="cr3ativconference_content_wrapper">
 
         <?php
-//        print '<pre>';
-//        $terms = get_terms( array(
-//            'taxonomy' => 'post_tag',
-//            'hide_empty' => false,
-//        ) );
-//
-//        var_dump($terms);
-//
-//        // var_dump($wp_query->query_vars);
-//        //    var_dump(get_post_meta($post->ID, 'cr3ativconfmeetingdate', $single = true));
-//        print '</pre>';
-        //?>
-
-        <?php
 
         add_filter('posts_orderby','cr3ativoderby2');
 
