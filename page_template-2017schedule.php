@@ -17,9 +17,9 @@ get_header(); ?>
 
         $conferenceDays = array(
             'Thursday' => array('Pre-conference Intensives'),
-            'Friday' => array('Open Houses','Keynote', 'After Hours'),
-            'Saturday' => array('Open Platform', 'All Day', 'Morning', 'Lunchtime', 'Afternoon', 'Evening', 'Keynote', 'After Hours'),
-            'Sunday' => array('Open Platform', 'All Day', 'Morning', 'Lunchtime', 'Afternoon', 'Evening', 'Keynote', 'After Hours'),
+            'Friday' => array('Open Houses','Featured', 'After Hours'),
+            'Saturday' => array('Open Platform', 'All Day', 'Morning', 'Lunchtime', 'Afternoon', 'Evening', 'Featured', 'After Hours'),
+            'Sunday' => array('Open Platform', 'All Day', 'Morning', 'Lunchtime', 'Afternoon', 'Evening', 'Featured', 'After Hours'),
         )
         ?>
         <ul class="accordion-tabs">
@@ -30,7 +30,7 @@ get_header(); ?>
                         <?php
                             if($confDay == 'Saturday' OR $confDay == 'Sunday') {
                                 print('
-                                    <p>OE 2016 opens at 9am Saturday and Sunday, with panels, workshops, discussions, projects, and more throughout the day. Keynote lectures will start at 7:30pm.</p>
+                                    <p>OE 2017 opens at 9am Saturday and Sunday, with panels, workshops, presentations, conversations, trainings and projects happening throughout the day. After the day’s sessions have wrapped, please join us for the evening’s Featured Presentation and an after-hours celebration.</p>
                                  ');
                             }
 
@@ -60,7 +60,20 @@ get_header(); ?>
                 <a href="javascript:void(0)" class="tab-link">OEHQ</a>
                 <div class="tab-content">
                     <div class="expander">
-                        <p>OEHQ 2017 details to come.</p>
+                        <p>When you arrive at OE 2017 make your first stop OEHQ! There you’ll find all of the necessary conference materials, including the printed program and your conference name tag. Your name tag is required to attend Open Engagement sessions, including the Featured Presentations. Please keep your name tag with you at all times. OEHQ have the most up-to-date information about the conference throughout the weekend, including any schedule/location changes.  </p>
+                        <p>
+                            <strong>OEHQ 2017 Hours are:</strong> <br />
+                        Friday, April 21st: 9:00am – 12:00pm<br />
+                        Saturday, April 22nd: 9:00am – 5:00pm<br />
+                        Sunday, April 23rd: 9:00am – 4:00pm
+                        </p><p>
+                            <strong>OEHQ 2017 will be located at: </strong><br />
+                            <a href="https://goo.gl/maps/tL9pSpAjmJN2">University of Illinois at Chicago (UIC)<br />
+                            Art and Exhibition Hall<br />
+                            1st floor<br />
+                            400 S Peoria<br />
+                            Chicago, IL 60607</a>
+                        </p>
                     </div>
 
                 </div>
