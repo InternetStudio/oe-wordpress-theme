@@ -115,6 +115,7 @@ a:focus {
 }
 a:hover,
 a:active {
+	color:#00b74f;
 	outline: 0;
 }
 a img {
@@ -191,6 +192,11 @@ big {
 	font-size: 125%;
 }
 
+.interior a, .site-footer a {color:#00b74f !important;}
+.interior a:active, .site-footer a:active {color:#00b74f !important;}
+.interior a:visited, .site-footer a:visited {color:#00b74f !important;}
+header nav ul li:first-of-type a:visited{color:#ffffff !important;}
+header nav .current_page_item a {color:#00b74f !important;}
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
@@ -292,7 +298,8 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-	color: #111;
+	/*color: #111;*/
+	color:#00b74f;
 }
 input[type="text"],
 input[type="email"],
@@ -349,6 +356,22 @@ textarea {
 .main-navigation ul ul a {
 	width: 200px;
 }
+
+/* ////////// added by Lauren //////////// */
+.main-navigation ul ul a:hover {
+color:#00b74f;
+}
+
+.main-navigation ul ul li a:hover {
+color:#00b74f;
+}
+
+.menu-main-nav-container ul li a:hover {
+color:#00b74f;
+}
+
+/*end added by Lauren*/
+
 .main-navigation ul ul li {
 }
 .main-navigation li:hover > a {
@@ -598,3 +621,9 @@ object {
 	max-width: 11.11%;
 }
 .gallery-caption {}
+
+a:visited{
+color:#00b74f;}
+
+header nav ul li:first-of-type a:visited{
+color:#00b74f;}

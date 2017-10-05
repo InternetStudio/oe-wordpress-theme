@@ -9,9 +9,11 @@
 
 get_header(); ?>
 
+<img class="blog-top" src="<?php echo get_template_directory_uri(); ?>/img/2016-blog-header.jpg" />
 
-    <img class="blog-top" src="<?php echo get_template_directory_uri(); ?>/img/2016-blog-header.jpg" />
     <img class="blog-top-mobile" src="<?php echo get_template_directory_uri(); ?>/img/2016-blog-header-mobile.jpg" />
+ 
+
     <div class="blog-intro">
         <p>Open Engagement's 2016 blog project is A Reader on POWER. Activists, writers, thinkers, artists, teachers, community leaders, cultural workers, and others from the OE and Oakland communities interpret and respond to the theme of POWER by sharing a resource or media. <a href="http://openengagement.info/a-reader-on-power/">Learn more</a>.</p>
         <p>

@@ -20,7 +20,7 @@ get_header(); ?>
 		<a href="?cat=82"><img class="blog-top" src="<?php echo get_template_directory_uri(); ?>/img/oe-blog-header-2016.jpg" /></a>
 	<?php endif; ?>
 	<?php if ( in_category( '85' ) ) : ?>
-		<a href="?cat=85"><img class="blog-top" src="<?php echo get_template_directory_uri(); ?>/img/oe-blog-header-2017.jpg" /></a>
+		<a href="?cat=85"><img class="blog-top" src="http://openengagement.info/wp-content/uploads/2017/02/OEWebsiteBanners5.jpg" /></a>
 	<?php endif; ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 
